@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="col-sm-12 text-center">
+      <h1 class="text-danger text-uppercase" style="margin-bottom: 50px;"> Calculator</h1>
+    </div>
+    <form method="get" action="/calculate">
+
+      <label for="num1">Number a:</label>
+      <input type="number" step="0.1" class="form-control" id="num1" name="num1" placeholder="Enter a number" required>
+
+      <label for="operator" style="margin-top: 10px;">Select sign:</label>
+      <select class="form-control" id="operator" name="operator" style="width: 100px;">
+        <option value="sum">+</option>
+        <option value="subtract">-</option>
+        <option value="multiply">x</option>
+        <option value="divide">/</option>
+      </select>
+
+      <label for="num2" style="margin-top: 10px;">Number b:</label>
+      <input type="number" step="0.1" class="form-control" id="num2" name="num2" placeholder="Enter a number" required>
+      <input type="submit" class="btn btn-success" style="margin-top: 10px;" id="btn_calculate" value="Result">
+    </form>
+    <div style="margin-top: 5px;font-size: 23px;" id="result" name="result">ppp</div>
+
+  </div>
+
+</body>
+
+</html>
